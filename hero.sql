@@ -164,3 +164,8 @@ WHERE hero_id = 1;
 
 DELETE FROM HeroItem
 WHERE hero_id = 1;
+
+SELECT Hero.hero_name, Class.class_name
+FROM Hero
+INNER JOIN Class ON Hero.class_id = Class.class_id
+WHERE Class.class_name = 'Archers';
